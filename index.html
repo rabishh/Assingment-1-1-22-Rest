@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <script>
+        let num;
+        function min(...c){
+            document.write("the entered number is =>");
+            for(let i=0;i<c.length;i++){
+                document.write(" " + c[i] + ",");
+                 num=c[0];
+                if(num>c[i]){
+                    num=c[i];
+                }
+            }
+        }
+        let num2=min(165,98,76,56,77,83,4,3,2);
+        document.write("<br>"+num+ "= "+" >" + "is the minimum number you entered");
+    </script>
+</body>
+</html>
